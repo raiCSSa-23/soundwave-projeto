@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*TODAS AS PÁGINAS*/
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1769e0;
+    background-image: url(/img/header-img.png);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: 60px;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+nav {
+    background-color: #ff4f9a;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: .2s ;
+}
+
+.botao:hover{
+    font-size: 20px;
+    background-color: #f51c77;
+}
+
+.pag{
+    transition: .2s ;
+}
+
+.pag:hover{
+    font-size: 20px;
+    color: #ffe45c;
+    
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcf4fb;
+}
+
+span {
+    color: #ffe45c;
+}
+
+.sdwv {
+    color: white;
+}
+
+.banner-inicio img,
+.banner-detalhes img,
+.banner-contato img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.banner-inicio,
+.banner-detalhes,
+.banner-contato {
+    display: flex;
+    justify-content: center;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+}
+
+footer{
+    background-image: url(/img/header-img.png);
+    background-size: cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80px;
+    color: white;
+    margin-top: 15px;
+}
+
+/*PÁGINA INICIAL*/
+.banner-inicio {
+    background-color: #0abde3;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    gap: 10px;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 30px;
+    border: 3px solid;
+    border-color: #a5cde4;
+    background-color: white;
+}
+
+h2 {
+    color: #1769e0;
+}
+
+.countdown {
+    background-color: #101820;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 30px;
+    gap: 20px;
+    border: 3px solid;
+    border-color: #61809e;
+    flex-wrap: wrap;
+    transition: .2s ;
+
+}
+
+.countdown:hover{
+    background-color: #61809e;
+    font-size: 20px;
+    h1{
+        color: white;
+    }
+}
+
+.contagem {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.contagem h1 {
+    font-size: 80px;
+}
+
+#dias,
+#horas,
+#minutos,
+#segundos {
+    color: #ff4f9a;
+    background-color: white;
+    padding: 40px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.cont p {
+    font-size: 30px;
+}
+
+.saibamais {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    color: #0abde3;
+}
+
+.botao {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #ff4f9a;
+    color: white;
+    border: none;
+    padding: 13px 22px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ;
+}
+
+/*PÁGINA DE DETALHES*/
+
+.banner-detalhes {
+    background-color: #ffe45c;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    padding-bottom: 30px;
+    gap: 10px;
+    border: 3px solid #a5cde4;
+}
+
+.card h3 {
+    color: #1769e0;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.info h3{
+    font-size: 22px;
+}
+
+.icon {
+    width: 30px;
+}
+
+.programacao {
+    width: 47%;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: white;
+    padding: 25px;
+    border-left: 5px solid #1769e0;
+    border-radius: 30px;
+}
+
+.programacao p {
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.programacao p:last-child {
+    border-bottom: none;
+}
+
+/*PÁGINA DE CONTATO*/
+.banner-contato{
+    background-color: #ffe45c;
+}
+
+.contato{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 20px;
+    gap: 50px;
+}
+
+.contato-info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.redes{
+    display: flex;
+    gap: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    border: 3px solid #a5cde4;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 6px;
+    width: 400px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 2px solid #a5cde4;
+    border-radius: 15px;
+    font-family: Arial, sans-serif;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: 2px solid #1769e0;
+}
+
+#mensagemForm {
+    margin-top: 15px;
+    font-weight: bold;
+    transition: .2s ;
+}
+
+#formContato{
+    display: flex;
+    flex-direction: column;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 850px) {
+    /*inicio*/
+    .descricao {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .contagem {
+        display: flex;
+        min-width: 90px;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+
+    .cont h1 {
+        font-size: 42px;
+    }
+
+    .cont p {
+        font-size: 20px;
+    }
+
+    #dias,
+    #horas,
+    #minutos,
+    #segundos {
+        padding: 20px;
+    }
+    /*detalhes*/
+    .info{
+        margin-left: 10px ;
+        margin-right: 10px;
+    }
+    .programacao{
+        width: 57%;
+    }
+    /*contato*/
+    .contato{
+        display: flex;
+        flex-direction: column;
+    }
+}
